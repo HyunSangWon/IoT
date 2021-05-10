@@ -1,6 +1,7 @@
 ## MQTT (Message Queuing Telemetry Transport)?
 
 -   네트워크 대역폭이 제한되는 원격 위치와의 연결을 위해 설계
+-   TCP/IP 프로토콜 위에서 동작(응용 계층에서 동작).
 -   발행 구독 기반의 메시징 프로토콜
 -   Publisher가 데이터를 보내면 Broker가 중재 역할을 하여 Subscriber가 구독하게 만든다.
     ![](../img/mqtt_comm.PNG)
@@ -33,5 +34,6 @@
 
 ### 참고 문헌
 
+-   MQTT 입문 글 https://dzone.com/refcardz/getting-started-with-mqtt?chapter=1
 -   MQTT Standard Packet Structure (http://www.steves-internet-guide.com/mqtt-protocol-messages-overview/)
 -   Packet Format 정리 잘되어 있음. (https://openlabpro.com/guide/mqtt-packet-format/)
