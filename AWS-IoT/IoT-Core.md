@@ -6,6 +6,19 @@
 
 -   최고 최대 128KB(킬로바이트) 크기의 메시지를 송신 및 수신할 수 있음.
 
+### AWS IoT Core Topic
+
+-   publishing Client와 Subscribing Client간의 메세지를 주고받는 메시지 통로
+-   토픽 필터
+    필터 # (하위 토픽 구독)
+    ex) sensor/#  
+     sensor/temp  
+     sensor/temp/room1  
+    필터 + (연관된 토픽 구독)
+    ex) sensor/+/room1  
+     sensor/temp/room1  
+     sensor/moisture/room1
+
 ### AWS IoT Core 요금
 
 -   최소 요금, 의무 서비스 사용량 없음.
