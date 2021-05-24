@@ -19,6 +19,27 @@
      sensor/temp/room1  
      sensor/moisture/room1
 
+### AWS IoT Core 규칙
+
+-   규칙?
+    IoT Core에서 Lambda,DynamoDB 등 AWS 서비스를 연결할 수 있는데 이를 규칙이라 함.
+    규칙에는 쿼리문이 존재하여 쿼리문으로 1차 필터링을 하고 람다에서 2차 필터링을 하면 된다.
+
+-   규칙 쿼리 문법 (흔히 쓰는 DB SQL문하고 같음)
+    '''
+    SELECT <Attribute> FROM <Topic Filter> WHERE <Condition>
+    '''
+-   규칙 쿼리 문법 예시 (온도가 30도 이상인 데이터만 수신)
+    '''
+    SELECT
+    CAST(topic(2) AS DECIMAL) AS device_id,
+    temperature AS reported_temperature,
+    30 AS max_temperature
+    FROM 'device/+/data' WHERE temperature > 30
+    '''
+    topic(number) 함수는 from절에서 정의한 토픽 필터 인덱스 값 호출  
+    ex) device/50/data 이라는 토픽이 있다면 topic(1)은 data가 나옴.
+
 ### AWS IoT Core 요금
 
 -   최소 요금, 의무 서비스 사용량 없음.
