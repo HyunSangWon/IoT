@@ -35,3 +35,8 @@
 #### GAP (Generic Access Profile)
 
 -   GAP 역할은 크게 Broadcaster, Observer, Peripheral, Central로 나뉨.
+
+#### 용어 정리
+
+-   notify : Peripheral에서 데이터를 전송 후 Central에서 잘 받든 말든 신경을 안 쓰고 바로 다음 작업을 하는 것. (Non Block 상태)
+-   indicate : Peripheral에서 데이터를 전송 후 Central에서 데이터를 잘 받을 때까지 대기하고 있다가 다음 작업을 하는 것.(Block 상태)
