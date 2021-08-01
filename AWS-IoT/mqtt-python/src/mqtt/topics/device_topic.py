@@ -1,0 +1,1 @@
+TEMPERATURE_TOPIC='device/10/data' 

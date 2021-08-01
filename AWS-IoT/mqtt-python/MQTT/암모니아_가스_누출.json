@@ -1,0 +1,12 @@
+{
+    "euid": "string",
+    "type": "string",
+    "state": {
+        "battery": "number",
+        "model": "varchar",
+        "firmware": "varchar"
+    },
+    "data": {
+        "value": "object"
+    }
+}

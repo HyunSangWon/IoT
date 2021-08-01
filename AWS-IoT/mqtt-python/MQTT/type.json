@@ -1,0 +1,8 @@
+{
+    "senser_type": [
+        { "_comment": "암모니아 가스누출", "type": "GAS_LEAK" },
+        { "_comment": "화재 감지", "type": "FIRE" },
+        { "_comment": "이상압력", "type": "PRESSURE" },
+        { "_comment": "가동률", "type": "ACC" }
+    ]
+}
